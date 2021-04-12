@@ -1,5 +1,8 @@
 # syukujitsu-go
 
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/mikan/syukujitsu-go)](https://pkg.go.dev/github.com/mikan/syukujitsu-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mikan/syukujitsu-go)](https://goreportcard.com/report/github.com/mikan/syukujitsu-go)
+
 内閣府の祝日 CSV を以下の `syukujitsu.Entry` 構造体のスライスにパースします。
 
 ```go
