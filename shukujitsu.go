@@ -17,6 +17,7 @@ import (
 	"golang.org/x/text/transform"
 )
 
+// Entry は祝日1日分の情報を保持する構造体です。
 type Entry struct {
 	Year  int
 	Month int
