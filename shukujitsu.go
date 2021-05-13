@@ -45,8 +45,8 @@ func LoadAndParse(name string) ([]Entry, error) {
 	return Parse(data)
 }
 
-// Search は Entry スライス内に time.Time と一致する祝日があればその祝日名と true を、一致しなければ空文字と false を返却します。
-func Search(entries []Entry, time time.Time) (name string, found bool) {
+// Find は Entry スライス内に time.Time と一致する祝日があればその祝日名と true を、一致しなければ空文字と false を返却します。
+func Find(entries []Entry, time time.Time) (name string, found bool) {
 	for _, entry := range entries {
 		if time.Year() == entry.Year && int(time.Month()) == entry.Month && time.Day() == entry.Day {
 			return entry.Name, true
